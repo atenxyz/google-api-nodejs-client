@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.2](https://www.github.com/googleapis/google-api-nodejs-client/compare/composer-v0.2.1...composer-v0.2.2) (2021-05-03)
+
+
+### Bug Fixes
+
+* **composer:** update the API ([196be22](https://www.github.com/googleapis/google-api-nodejs-client/commit/196be22a1559ede8369d26f6047491cfaf04f361))
+
 ### [0.2.1](https://www.github.com/googleapis/google-api-nodejs-client/compare/composer-v0.2.0...composer-v0.2.1) (2021-04-21)
 
 

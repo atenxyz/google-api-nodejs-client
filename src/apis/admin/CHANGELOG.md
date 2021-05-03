@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://www.github.com/googleapis/google-api-nodejs-client/compare/admin-v0.3.0...admin-v1.0.0) (2021-05-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* **admin:** This release has breaking changes.
+
+### Features
+
+* **admin:** update the API ([66803e3](https://www.github.com/googleapis/google-api-nodejs-client/commit/66803e3d39e0f470e69a555e1899ac0fa6a97eaf))
+
 ## [0.3.0](https://www.github.com/googleapis/google-api-nodejs-client/compare/admin-v0.2.0...admin-v0.3.0) (2021-04-21)
 
 
