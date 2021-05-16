@@ -9700,7 +9700,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Entitytypes$Entities$Batchcreate;
+        params =
+          {} as Params$Resource$Projects$Agent$Entitytypes$Entities$Batchcreate;
         options = {};
       }
 
@@ -9852,7 +9853,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Entitytypes$Entities$Batchdelete;
+        params =
+          {} as Params$Resource$Projects$Agent$Entitytypes$Entities$Batchdelete;
         options = {};
       }
 
@@ -10005,7 +10007,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Entitytypes$Entities$Batchupdate;
+        params =
+          {} as Params$Resource$Projects$Agent$Entitytypes$Entities$Batchupdate;
         options = {};
       }
 
@@ -11263,12 +11266,14 @@ export namespace dialogflow_v2 {
     entityTypes: Resource$Projects$Agent$Environments$Users$Sessions$Entitytypes;
     constructor(context: APIRequestContext) {
       this.context = context;
-      this.contexts = new Resource$Projects$Agent$Environments$Users$Sessions$Contexts(
-        this.context
-      );
-      this.entityTypes = new Resource$Projects$Agent$Environments$Users$Sessions$Entitytypes(
-        this.context
-      );
+      this.contexts =
+        new Resource$Projects$Agent$Environments$Users$Sessions$Contexts(
+          this.context
+        );
+      this.entityTypes =
+        new Resource$Projects$Agent$Environments$Users$Sessions$Entitytypes(
+          this.context
+        );
     }
 
     /**
@@ -11300,13 +11305,12 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.agent.environments.users.sessions.deleteContexts(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.agent.environments.users.sessions.deleteContexts({
      *       // Required. The name of the session to delete all contexts from. Format: `projects//agent/sessions/` or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
      *       parent:
      *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session',
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -11373,7 +11377,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Deletecontexts;
+        params =
+          {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Deletecontexts;
         options = {};
       }
 
@@ -11438,8 +11443,8 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.agent.environments.users.sessions.detectIntent(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.agent.environments.users.sessions.detectIntent({
      *       // Required. The name of the session this query is sent to. Format: `projects//agent/sessions/`, or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment (`Environment ID` might be referred to as environment name at some places). If `User ID` is not specified, we are using "-". It's up to the API caller to choose an appropriate `Session ID` and `User Id`. They can be a random number or some type of user and session identifiers (preferably hashed). The length of the `Session ID` and `User ID` must not exceed 36 characters. For more information, see the [API interactions guide](https://cloud.google.com/dialogflow/docs/api-overview). Note: Always use agent versions for production traffic. See [Versions and environments](https://cloud.google.com/dialogflow/es/docs/agents-versions).
      *       session:
      *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session',
@@ -11455,8 +11460,7 @@ export namespace dialogflow_v2 {
      *         //   "queryParams": {}
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -11531,7 +11535,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Detectintent;
+        params =
+          {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Detectintent;
         options = {};
       }
 
@@ -11625,23 +11630,24 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.agent.environments.users.sessions.contexts.create(
-     *     {
-     *       // Required. The session to create a context for. Format: `projects//agent/sessions/` or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       parent:
-     *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session',
+     *   const res =
+     *     await dialogflow.projects.agent.environments.users.sessions.contexts.create(
+     *       {
+     *         // Required. The session to create a context for. Format: `projects//agent/sessions/` or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         parent:
+     *           'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session',
      *
-     *       // Request body metadata
-     *       requestBody: {
-     *         // request body parameters
-     *         // {
-     *         //   "lifespanCount": 0,
-     *         //   "name": "my_name",
-     *         //   "parameters": {}
-     *         // }
-     *       },
-     *     }
-     *   );
+     *         // Request body metadata
+     *         requestBody: {
+     *           // request body parameters
+     *           // {
+     *           //   "lifespanCount": 0,
+     *           //   "name": "my_name",
+     *           //   "parameters": {}
+     *           // }
+     *         },
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -11714,7 +11720,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Contexts$Create;
+        params =
+          {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Contexts$Create;
         options = {};
       }
 
@@ -11781,13 +11788,13 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.agent.environments.users.sessions.contexts.delete(
-     *     {
-     *       // Required. The name of the context to delete. Format: `projects//agent/sessions//contexts/` or `projects//agent/environments//users//sessions//contexts/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       name:
-     *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session/contexts/my-context',
-     *     }
-     *   );
+     *   const res =
+     *     await dialogflow.projects.agent.environments.users.sessions.contexts.delete(
+     *       {
+     *         // Required. The name of the context to delete. Format: `projects//agent/sessions//contexts/` or `projects//agent/environments//users//sessions//contexts/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         name: 'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session/contexts/my-context',
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -11852,7 +11859,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Contexts$Delete;
+        params =
+          {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Contexts$Delete;
         options = {};
       }
 
@@ -11914,13 +11922,11 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.agent.environments.users.sessions.contexts.get(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.agent.environments.users.sessions.contexts.get({
      *       // Required. The name of the context. Format: `projects//agent/sessions//contexts/` or `projects//agent/environments//users//sessions//contexts/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       name:
-     *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session/contexts/my-context',
-     *     }
-     *   );
+     *       name: 'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session/contexts/my-context',
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -11993,7 +11999,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Contexts$Get;
+        params =
+          {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Contexts$Get;
         options = {};
       }
 
@@ -12057,8 +12064,8 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.agent.environments.users.sessions.contexts.list(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.agent.environments.users.sessions.contexts.list({
      *       // Optional. The maximum number of items to return in a single page. By default 100 and at most 1000.
      *       pageSize: 'placeholder-value',
      *       // Optional. The next_page_token value returned from a previous list request.
@@ -12066,8 +12073,7 @@ export namespace dialogflow_v2 {
      *       // Required. The session to list all contexts from. Format: `projects//agent/sessions/` or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
      *       parent:
      *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session',
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -12139,7 +12145,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Contexts$List;
+        params =
+          {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Contexts$List;
         options = {};
       }
 
@@ -12206,11 +12213,10 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.agent.environments.users.sessions.contexts.patch(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.agent.environments.users.sessions.contexts.patch({
      *       // Required. The unique identifier of the context. Format: `projects//agent/sessions//contexts/`, or `projects//agent/environments//users//sessions//contexts/`. The `Context ID` is always converted to lowercase, may only contain characters in a-zA-Z0-9_-% and may be at most 250 bytes long. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user. The following context names are reserved for internal use by Dialogflow. You should not use these contexts or create contexts with these names: * `__system_counters__` * `*_id_dialog_context` * `*_dialog_params_size`
-     *       name:
-     *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session/contexts/my-context',
+     *       name: 'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session/contexts/my-context',
      *       // Optional. The mask to control which fields get updated.
      *       updateMask: 'placeholder-value',
      *
@@ -12223,8 +12229,7 @@ export namespace dialogflow_v2 {
      *         //   "parameters": {}
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -12297,7 +12302,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Contexts$Patch;
+        params =
+          {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Contexts$Patch;
         options = {};
       }
 
@@ -12426,23 +12432,24 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.agent.environments.users.sessions.entityTypes.create(
-     *     {
-     *       // Required. The session to create a session entity type for. Format: `projects//agent/sessions/` or `projects//agent/environments//users// sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       parent:
-     *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session',
+     *   const res =
+     *     await dialogflow.projects.agent.environments.users.sessions.entityTypes.create(
+     *       {
+     *         // Required. The session to create a session entity type for. Format: `projects//agent/sessions/` or `projects//agent/environments//users// sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         parent:
+     *           'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session',
      *
-     *       // Request body metadata
-     *       requestBody: {
-     *         // request body parameters
-     *         // {
-     *         //   "entities": [],
-     *         //   "entityOverrideMode": "my_entityOverrideMode",
-     *         //   "name": "my_name"
-     *         // }
-     *       },
-     *     }
-     *   );
+     *         // Request body metadata
+     *         requestBody: {
+     *           // request body parameters
+     *           // {
+     *           //   "entities": [],
+     *           //   "entityOverrideMode": "my_entityOverrideMode",
+     *           //   "name": "my_name"
+     *           // }
+     *         },
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -12515,7 +12522,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Entitytypes$Create;
+        params =
+          {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Entitytypes$Create;
         options = {};
       }
 
@@ -12582,13 +12590,13 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.agent.environments.users.sessions.entityTypes.delete(
-     *     {
-     *       // Required. The name of the entity type to delete. Format: `projects//agent/sessions//entityTypes/` or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       name:
-     *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session/entityTypes/my-entityType',
-     *     }
-     *   );
+     *   const res =
+     *     await dialogflow.projects.agent.environments.users.sessions.entityTypes.delete(
+     *       {
+     *         // Required. The name of the entity type to delete. Format: `projects//agent/sessions//entityTypes/` or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         name: 'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session/entityTypes/my-entityType',
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -12653,7 +12661,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Entitytypes$Delete;
+        params =
+          {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Entitytypes$Delete;
         options = {};
       }
 
@@ -12715,13 +12724,13 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.agent.environments.users.sessions.entityTypes.get(
-     *     {
-     *       // Required. The name of the session entity type. Format: `projects//agent/sessions//entityTypes/` or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       name:
-     *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session/entityTypes/my-entityType',
-     *     }
-     *   );
+     *   const res =
+     *     await dialogflow.projects.agent.environments.users.sessions.entityTypes.get(
+     *       {
+     *         // Required. The name of the session entity type. Format: `projects//agent/sessions//entityTypes/` or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         name: 'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session/entityTypes/my-entityType',
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -12794,7 +12803,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Entitytypes$Get;
+        params =
+          {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Entitytypes$Get;
         options = {};
       }
 
@@ -12858,17 +12868,18 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.agent.environments.users.sessions.entityTypes.list(
-     *     {
-     *       // Optional. The maximum number of items to return in a single page. By default 100 and at most 1000.
-     *       pageSize: 'placeholder-value',
-     *       // Optional. The next_page_token value returned from a previous list request.
-     *       pageToken: 'placeholder-value',
-     *       // Required. The session to list all session entity types from. Format: `projects//agent/sessions/` or `projects//agent/environments//users// sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       parent:
-     *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session',
-     *     }
-     *   );
+     *   const res =
+     *     await dialogflow.projects.agent.environments.users.sessions.entityTypes.list(
+     *       {
+     *         // Optional. The maximum number of items to return in a single page. By default 100 and at most 1000.
+     *         pageSize: 'placeholder-value',
+     *         // Optional. The next_page_token value returned from a previous list request.
+     *         pageToken: 'placeholder-value',
+     *         // Required. The session to list all session entity types from. Format: `projects//agent/sessions/` or `projects//agent/environments//users// sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         parent:
+     *           'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session',
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -12940,7 +12951,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Entitytypes$List;
+        params =
+          {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Entitytypes$List;
         options = {};
       }
 
@@ -13007,25 +13019,25 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.agent.environments.users.sessions.entityTypes.patch(
-     *     {
-     *       // Required. The unique identifier of this session entity type. Format: `projects//agent/sessions//entityTypes/`, or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user. `` must be the display name of an existing entity type in the same agent that will be overridden or supplemented.
-     *       name:
-     *         'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session/entityTypes/my-entityType',
-     *       // Optional. The mask to control which fields get updated.
-     *       updateMask: 'placeholder-value',
+     *   const res =
+     *     await dialogflow.projects.agent.environments.users.sessions.entityTypes.patch(
+     *       {
+     *         // Required. The unique identifier of this session entity type. Format: `projects//agent/sessions//entityTypes/`, or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user. `` must be the display name of an existing entity type in the same agent that will be overridden or supplemented.
+     *         name: 'projects/my-project/agent/environments/my-environment/users/my-user/sessions/my-session/entityTypes/my-entityType',
+     *         // Optional. The mask to control which fields get updated.
+     *         updateMask: 'placeholder-value',
      *
-     *       // Request body metadata
-     *       requestBody: {
-     *         // request body parameters
-     *         // {
-     *         //   "entities": [],
-     *         //   "entityOverrideMode": "my_entityOverrideMode",
-     *         //   "name": "my_name"
-     *         // }
-     *       },
-     *     }
-     *   );
+     *         // Request body metadata
+     *         requestBody: {
+     *           // request body parameters
+     *           // {
+     *           //   "entities": [],
+     *           //   "entityOverrideMode": "my_entityOverrideMode",
+     *           //   "name": "my_name"
+     *           // }
+     *         },
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -13098,7 +13110,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Entitytypes$Patch;
+        params =
+          {} as Params$Resource$Projects$Agent$Environments$Users$Sessions$Entitytypes$Patch;
         options = {};
       }
 
@@ -15366,7 +15379,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Knowledgebases$Documents$Create;
+        params =
+          {} as Params$Resource$Projects$Agent$Knowledgebases$Documents$Create;
         options = {};
       }
 
@@ -15433,8 +15447,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.agent.knowledgeBases.documents.delete({
      *     // Required. The name of the document to delete. Format: `projects//locations//knowledgeBases//documents/`.
-     *     name:
-     *       'projects/my-project/agent/knowledgeBases/my-knowledgeBase/documents/my-document',
+     *     name: 'projects/my-project/agent/knowledgeBases/my-knowledgeBase/documents/my-document',
      *   });
      *   console.log(res.data);
      *
@@ -15510,7 +15523,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Knowledgebases$Documents$Delete;
+        params =
+          {} as Params$Resource$Projects$Agent$Knowledgebases$Documents$Delete;
         options = {};
       }
 
@@ -15574,8 +15588,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.agent.knowledgeBases.documents.get({
      *     // Required. The name of the document to retrieve. Format `projects//locations//knowledgeBases//documents/`.
-     *     name:
-     *       'projects/my-project/agent/knowledgeBases/my-knowledgeBase/documents/my-document',
+     *     name: 'projects/my-project/agent/knowledgeBases/my-knowledgeBase/documents/my-document',
      *   });
      *   console.log(res.data);
      *
@@ -15655,7 +15668,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Knowledgebases$Documents$Get;
+        params =
+          {} as Params$Resource$Projects$Agent$Knowledgebases$Documents$Get;
         options = {};
       }
 
@@ -15798,7 +15812,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Knowledgebases$Documents$List;
+        params =
+          {} as Params$Resource$Projects$Agent$Knowledgebases$Documents$List;
         options = {};
       }
 
@@ -15867,8 +15882,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.agent.knowledgeBases.documents.patch({
      *     // Optional. The document resource name. The name must be empty when creating a document. Format: `projects//locations//knowledgeBases//documents/`.
-     *     name:
-     *       'projects/my-project/agent/knowledgeBases/my-knowledgeBase/documents/my-document',
+     *     name: 'projects/my-project/agent/knowledgeBases/my-knowledgeBase/documents/my-document',
      *     // Optional. Not specified means `update all`. Currently, only `display_name` can be updated, an InvalidArgument will be returned for attempting to update other fields.
      *     updateMask: 'placeholder-value',
      *
@@ -15962,7 +15976,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Knowledgebases$Documents$Patch;
+        params =
+          {} as Params$Resource$Projects$Agent$Knowledgebases$Documents$Patch;
         options = {};
       }
 
@@ -16026,8 +16041,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.agent.knowledgeBases.documents.reload({
      *     // Required. The name of the document to reload. Format: `projects//locations//knowledgeBases//documents/`
-     *     name:
-     *       'projects/my-project/agent/knowledgeBases/my-knowledgeBase/documents/my-document',
+     *     name: 'projects/my-project/agent/knowledgeBases/my-knowledgeBase/documents/my-document',
      *
      *     // Request body metadata
      *     requestBody: {
@@ -16111,7 +16125,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Knowledgebases$Documents$Reload;
+        params =
+          {} as Params$Resource$Projects$Agent$Knowledgebases$Documents$Reload;
         options = {};
       }
 
@@ -17449,7 +17464,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Sessions$Entitytypes$Create;
+        params =
+          {} as Params$Resource$Projects$Agent$Sessions$Entitytypes$Create;
         options = {};
       }
 
@@ -17518,8 +17534,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.agent.sessions.entityTypes.delete({
      *     // Required. The name of the entity type to delete. Format: `projects//agent/sessions//entityTypes/` or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *     name:
-     *       'projects/my-project/agent/sessions/my-session/entityTypes/my-entityType',
+     *     name: 'projects/my-project/agent/sessions/my-session/entityTypes/my-entityType',
      *   });
      *   console.log(res.data);
      *
@@ -17585,7 +17600,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Sessions$Entitytypes$Delete;
+        params =
+          {} as Params$Resource$Projects$Agent$Sessions$Entitytypes$Delete;
         options = {};
       }
 
@@ -17649,8 +17665,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.agent.sessions.entityTypes.get({
      *     // Required. The name of the session entity type. Format: `projects//agent/sessions//entityTypes/` or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *     name:
-     *       'projects/my-project/agent/sessions/my-session/entityTypes/my-entityType',
+     *     name: 'projects/my-project/agent/sessions/my-session/entityTypes/my-entityType',
      *   });
      *   console.log(res.data);
      *
@@ -17936,8 +17951,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.agent.sessions.entityTypes.patch({
      *     // Required. The unique identifier of this session entity type. Format: `projects//agent/sessions//entityTypes/`, or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user. `` must be the display name of an existing entity type in the same agent that will be overridden or supplemented.
-     *     name:
-     *       'projects/my-project/agent/sessions/my-session/entityTypes/my-entityType',
+     *     name: 'projects/my-project/agent/sessions/my-session/entityTypes/my-entityType',
      *     // Optional. The mask to control which fields get updated.
      *     updateMask: 'placeholder-value',
      *
@@ -18023,7 +18037,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Agent$Sessions$Entitytypes$Patch;
+        params =
+          {} as Params$Resource$Projects$Agent$Sessions$Entitytypes$Patch;
         options = {};
       }
 
@@ -20945,9 +20960,10 @@ export namespace dialogflow_v2 {
     suggestions: Resource$Projects$Conversations$Participants$Suggestions;
     constructor(context: APIRequestContext) {
       this.context = context;
-      this.suggestions = new Resource$Projects$Conversations$Participants$Suggestions(
-        this.context
-      );
+      this.suggestions =
+        new Resource$Projects$Conversations$Participants$Suggestions(
+          this.context
+        );
     }
 
     /**
@@ -20979,8 +20995,8 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.conversations.participants.analyzeContent(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.conversations.participants.analyzeContent({
      *       // Required. The name of the participant this text comes from. Format: `projects//locations//conversations//participants/`.
      *       participant:
      *         'projects/my-project/conversations/my-conversation/participants/my-participant',
@@ -20996,8 +21012,7 @@ export namespace dialogflow_v2 {
      *         //   "textInput": {}
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -21074,7 +21089,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Conversations$Participants$Analyzecontent;
+        params =
+          {} as Params$Resource$Projects$Conversations$Participants$Analyzecontent;
         options = {};
       }
 
@@ -21227,7 +21243,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Conversations$Participants$Create;
+        params =
+          {} as Params$Resource$Projects$Conversations$Participants$Create;
         options = {};
       }
 
@@ -21296,8 +21313,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.conversations.participants.get({
      *     // Required. The name of the participant. Format: `projects//locations//conversations//participants/`.
-     *     name:
-     *       'projects/my-project/conversations/my-conversation/participants/my-participant',
+     *     name: 'projects/my-project/conversations/my-conversation/participants/my-participant',
      *   });
      *   console.log(res.data);
      *
@@ -21583,8 +21599,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.conversations.participants.patch({
      *     // Optional. The unique identifier of this participant. Format: `projects//locations//conversations//participants/`.
-     *     name:
-     *       'projects/my-project/conversations/my-conversation/participants/my-participant',
+     *     name: 'projects/my-project/conversations/my-conversation/participants/my-participant',
      *     // Required. The mask to specify which fields to update.
      *     updateMask: 'placeholder-value',
      *
@@ -21670,7 +21685,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Conversations$Participants$Patch;
+        params =
+          {} as Params$Resource$Projects$Conversations$Participants$Patch;
         options = {};
       }
 
@@ -21804,22 +21820,23 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.conversations.participants.suggestions.suggestArticles(
-     *     {
-     *       // Required. The name of the participant to fetch suggestion for. Format: `projects//locations//conversations//participants/`.
-     *       parent:
-     *         'projects/my-project/conversations/my-conversation/participants/my-participant',
+     *   const res =
+     *     await dialogflow.projects.conversations.participants.suggestions.suggestArticles(
+     *       {
+     *         // Required. The name of the participant to fetch suggestion for. Format: `projects//locations//conversations//participants/`.
+     *         parent:
+     *           'projects/my-project/conversations/my-conversation/participants/my-participant',
      *
-     *       // Request body metadata
-     *       requestBody: {
-     *         // request body parameters
-     *         // {
-     *         //   "contextSize": 0,
-     *         //   "latestMessage": "my_latestMessage"
-     *         // }
-     *       },
-     *     }
-     *   );
+     *         // Request body metadata
+     *         requestBody: {
+     *           // request body parameters
+     *           // {
+     *           //   "contextSize": 0,
+     *           //   "latestMessage": "my_latestMessage"
+     *           // }
+     *         },
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -21892,7 +21909,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Conversations$Participants$Suggestions$Suggestarticles;
+        params =
+          {} as Params$Resource$Projects$Conversations$Participants$Suggestions$Suggestarticles;
         options = {};
       }
 
@@ -21958,22 +21976,23 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.conversations.participants.suggestions.suggestFaqAnswers(
-     *     {
-     *       // Required. The name of the participant to fetch suggestion for. Format: `projects//locations//conversations//participants/`.
-     *       parent:
-     *         'projects/my-project/conversations/my-conversation/participants/my-participant',
+     *   const res =
+     *     await dialogflow.projects.conversations.participants.suggestions.suggestFaqAnswers(
+     *       {
+     *         // Required. The name of the participant to fetch suggestion for. Format: `projects//locations//conversations//participants/`.
+     *         parent:
+     *           'projects/my-project/conversations/my-conversation/participants/my-participant',
      *
-     *       // Request body metadata
-     *       requestBody: {
-     *         // request body parameters
-     *         // {
-     *         //   "contextSize": 0,
-     *         //   "latestMessage": "my_latestMessage"
-     *         // }
-     *       },
-     *     }
-     *   );
+     *         // Request body metadata
+     *         requestBody: {
+     *           // request body parameters
+     *           // {
+     *           //   "contextSize": 0,
+     *           //   "latestMessage": "my_latestMessage"
+     *           // }
+     *         },
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -22046,7 +22065,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Conversations$Participants$Suggestions$Suggestfaqanswers;
+        params =
+          {} as Params$Resource$Projects$Conversations$Participants$Suggestions$Suggestfaqanswers;
         options = {};
       }
 
@@ -23101,8 +23121,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.knowledgeBases.documents.delete({
      *     // Required. The name of the document to delete. Format: `projects//locations//knowledgeBases//documents/`.
-     *     name:
-     *       'projects/my-project/knowledgeBases/my-knowledgeBase/documents/my-document',
+     *     name: 'projects/my-project/knowledgeBases/my-knowledgeBase/documents/my-document',
      *   });
      *   console.log(res.data);
      *
@@ -23242,8 +23261,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.knowledgeBases.documents.get({
      *     // Required. The name of the document to retrieve. Format `projects//locations//knowledgeBases//documents/`.
-     *     name:
-     *       'projects/my-project/knowledgeBases/my-knowledgeBase/documents/my-document',
+     *     name: 'projects/my-project/knowledgeBases/my-knowledgeBase/documents/my-document',
      *   });
      *   console.log(res.data);
      *
@@ -23535,8 +23553,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.knowledgeBases.documents.patch({
      *     // Optional. The document resource name. The name must be empty when creating a document. Format: `projects//locations//knowledgeBases//documents/`.
-     *     name:
-     *       'projects/my-project/knowledgeBases/my-knowledgeBase/documents/my-document',
+     *     name: 'projects/my-project/knowledgeBases/my-knowledgeBase/documents/my-document',
      *     // Optional. Not specified means `update all`. Currently, only `display_name` can be updated, an InvalidArgument will be returned for attempting to update other fields.
      *     updateMask: 'placeholder-value',
      *
@@ -23694,8 +23711,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.knowledgeBases.documents.reload({
      *     // Required. The name of the document to reload. Format: `projects//locations//knowledgeBases//documents/`
-     *     name:
-     *       'projects/my-project/knowledgeBases/my-knowledgeBase/documents/my-document',
+     *     name: 'projects/my-project/knowledgeBases/my-knowledgeBase/documents/my-document',
      *
      *     // Request body metadata
      *     requestBody: {
@@ -23897,9 +23913,8 @@ export namespace dialogflow_v2 {
       this.answerRecords = new Resource$Projects$Locations$Answerrecords(
         this.context
       );
-      this.conversationProfiles = new Resource$Projects$Locations$Conversationprofiles(
-        this.context
-      );
+      this.conversationProfiles =
+        new Resource$Projects$Locations$Conversationprofiles(this.context);
       this.conversations = new Resource$Projects$Locations$Conversations(
         this.context
       );
@@ -24827,7 +24842,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Getvalidationresult;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Getvalidationresult;
         options = {};
       }
 
@@ -25585,7 +25601,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Updatefulfillment;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Updatefulfillment;
         options = {};
       }
 
@@ -25724,9 +25741,10 @@ export namespace dialogflow_v2 {
     entities: Resource$Projects$Locations$Agent$Entitytypes$Entities;
     constructor(context: APIRequestContext) {
       this.context = context;
-      this.entities = new Resource$Projects$Locations$Agent$Entitytypes$Entities(
-        this.context
-      );
+      this.entities =
+        new Resource$Projects$Locations$Agent$Entitytypes$Entities(
+          this.context
+        );
     }
 
     /**
@@ -25846,7 +25864,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Batchdelete;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Batchdelete;
         options = {};
       }
 
@@ -26002,7 +26021,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Batchupdate;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Batchupdate;
         options = {};
       }
 
@@ -26161,7 +26181,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Create;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Create;
         options = {};
       }
 
@@ -26230,8 +26251,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.locations.agent.entityTypes.delete({
      *     // Required. The name of the entity type to delete. Format: `projects//agent/entityTypes/`.
-     *     name:
-     *       'projects/my-project/locations/my-location/agent/entityTypes/my-entityType',
+     *     name: 'projects/my-project/locations/my-location/agent/entityTypes/my-entityType',
      *   });
      *   console.log(res.data);
      *
@@ -26297,7 +26317,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Delete;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Delete;
         options = {};
       }
 
@@ -26363,8 +26384,7 @@ export namespace dialogflow_v2 {
      *     // Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
      *     languageCode: 'placeholder-value',
      *     // Required. The name of the entity type. Format: `projects//agent/entityTypes/`.
-     *     name:
-     *       'projects/my-project/locations/my-location/agent/entityTypes/my-entityType',
+     *     name: 'projects/my-project/locations/my-location/agent/entityTypes/my-entityType',
      *   });
      *   console.log(res.data);
      *
@@ -26586,7 +26606,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Entitytypes$List;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Entitytypes$List;
         options = {};
       }
 
@@ -26657,8 +26678,7 @@ export namespace dialogflow_v2 {
      *     // Optional. The language used to access language-specific data. If not specified, the agent's default language is used. For more information, see [Multilingual intent and entity data](https://cloud.google.com/dialogflow/docs/agents-multilingual#intent-entity).
      *     languageCode: 'placeholder-value',
      *     // The unique identifier of the entity type. Required for EntityTypes.UpdateEntityType and EntityTypes.BatchUpdateEntityTypes methods. Format: `projects//agent/entityTypes/`.
-     *     name:
-     *       'projects/my-project/locations/my-location/agent/entityTypes/my-entityType',
+     *     name: 'projects/my-project/locations/my-location/agent/entityTypes/my-entityType',
      *     // Optional. The mask to control which fields get updated.
      *     updateMask: 'placeholder-value',
      *
@@ -26750,7 +26770,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Patch;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Patch;
         options = {};
       }
 
@@ -26919,8 +26940,8 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.entityTypes.entities.batchCreate(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.agent.entityTypes.entities.batchCreate({
      *       // Required. The name of the entity type to create entities in. Format: `projects//agent/entityTypes/`.
      *       parent:
      *         'projects/my-project/locations/my-location/agent/entityTypes/my-entityType',
@@ -26933,8 +26954,7 @@ export namespace dialogflow_v2 {
      *         //   "languageCode": "my_languageCode"
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -27009,7 +27029,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Entities$Batchcreate;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Entities$Batchcreate;
         options = {};
       }
 
@@ -27074,8 +27095,8 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.entityTypes.entities.batchDelete(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.agent.entityTypes.entities.batchDelete({
      *       // Required. The name of the entity type to delete entries for. Format: `projects//agent/entityTypes/`.
      *       parent:
      *         'projects/my-project/locations/my-location/agent/entityTypes/my-entityType',
@@ -27088,8 +27109,7 @@ export namespace dialogflow_v2 {
      *         //   "languageCode": "my_languageCode"
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -27164,7 +27184,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Entities$Batchdelete;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Entities$Batchdelete;
         options = {};
       }
 
@@ -27229,8 +27250,8 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.entityTypes.entities.batchUpdate(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.agent.entityTypes.entities.batchUpdate({
      *       // Required. The name of the entity type to update or create entities in. Format: `projects//agent/entityTypes/`.
      *       parent:
      *         'projects/my-project/locations/my-location/agent/entityTypes/my-entityType',
@@ -27244,8 +27265,7 @@ export namespace dialogflow_v2 {
      *         //   "updateMask": "my_updateMask"
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -27320,7 +27340,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Entities$Batchupdate;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Entitytypes$Entities$Batchupdate;
         options = {};
       }
 
@@ -27529,7 +27550,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Create;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Create;
         options = {};
       }
 
@@ -27598,8 +27620,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.locations.agent.environments.delete({
      *     // Required. The name of the environment to delete. / Format: - `projects//agent/environments/` - `projects//locations//agent/environments/`
-     *     name:
-     *       'projects/my-project/locations/my-location/agent/environments/my-environment',
+     *     name: 'projects/my-project/locations/my-location/agent/environments/my-environment',
      *   });
      *   console.log(res.data);
      *
@@ -27665,7 +27686,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Delete;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Delete;
         options = {};
       }
 
@@ -27729,8 +27751,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.locations.agent.environments.get({
      *     // Required. The name of the environment. Supported formats: - `projects//agent/environments/` - `projects//locations//agent/environments/`
-     *     name:
-     *       'projects/my-project/locations/my-location/agent/environments/my-environment',
+     *     name: 'projects/my-project/locations/my-location/agent/environments/my-environment',
      *   });
      *   console.log(res.data);
      *
@@ -27808,7 +27829,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Get;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Get;
         options = {};
       }
 
@@ -27955,7 +27977,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Gethistory;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Gethistory;
         options = {};
       }
 
@@ -28101,7 +28124,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$List;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$List;
         options = {};
       }
 
@@ -28172,8 +28196,7 @@ export namespace dialogflow_v2 {
      *     // Optional. This field is used to prevent accidental overwrite of the draft environment, which is an operation that cannot be undone. To confirm that the caller desires this overwrite, this field must be explicitly set to true when updating the draft environment (environment ID = `-`).
      *     allowLoadToDraftAndDiscardChanges: 'placeholder-value',
      *     // Output only. The unique identifier of this agent environment. Supported formats: - `projects//agent/environments/` - `projects//locations//agent/environments/`
-     *     name:
-     *       'projects/my-project/locations/my-location/agent/environments/my-environment',
+     *     name: 'projects/my-project/locations/my-location/agent/environments/my-environment',
      *     // Required. The mask to control which fields get updated.
      *     updateMask: 'placeholder-value',
      *
@@ -28267,7 +28290,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Patch;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Patch;
         options = {};
       }
 
@@ -28389,9 +28413,10 @@ export namespace dialogflow_v2 {
     sessions: Resource$Projects$Locations$Agent$Environments$Users$Sessions;
     constructor(context: APIRequestContext) {
       this.context = context;
-      this.sessions = new Resource$Projects$Locations$Agent$Environments$Users$Sessions(
-        this.context
-      );
+      this.sessions =
+        new Resource$Projects$Locations$Agent$Environments$Users$Sessions(
+          this.context
+        );
     }
   }
 
@@ -28401,12 +28426,14 @@ export namespace dialogflow_v2 {
     entityTypes: Resource$Projects$Locations$Agent$Environments$Users$Sessions$Entitytypes;
     constructor(context: APIRequestContext) {
       this.context = context;
-      this.contexts = new Resource$Projects$Locations$Agent$Environments$Users$Sessions$Contexts(
-        this.context
-      );
-      this.entityTypes = new Resource$Projects$Locations$Agent$Environments$Users$Sessions$Entitytypes(
-        this.context
-      );
+      this.contexts =
+        new Resource$Projects$Locations$Agent$Environments$Users$Sessions$Contexts(
+          this.context
+        );
+      this.entityTypes =
+        new Resource$Projects$Locations$Agent$Environments$Users$Sessions$Entitytypes(
+          this.context
+        );
     }
 
     /**
@@ -28438,13 +28465,14 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.environments.users.sessions.deleteContexts(
-     *     {
-     *       // Required. The name of the session to delete all contexts from. Format: `projects//agent/sessions/` or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       parent:
-     *         'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session',
-     *     }
-     *   );
+     *   const res =
+     *     await dialogflow.projects.locations.agent.environments.users.sessions.deleteContexts(
+     *       {
+     *         // Required. The name of the session to delete all contexts from. Format: `projects//agent/sessions/` or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         parent:
+     *           'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session',
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -28511,7 +28539,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Deletecontexts;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Deletecontexts;
         options = {};
       }
 
@@ -28576,25 +28605,26 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.environments.users.sessions.detectIntent(
-     *     {
-     *       // Required. The name of the session this query is sent to. Format: `projects//agent/sessions/`, or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment (`Environment ID` might be referred to as environment name at some places). If `User ID` is not specified, we are using "-". It's up to the API caller to choose an appropriate `Session ID` and `User Id`. They can be a random number or some type of user and session identifiers (preferably hashed). The length of the `Session ID` and `User ID` must not exceed 36 characters. For more information, see the [API interactions guide](https://cloud.google.com/dialogflow/docs/api-overview). Note: Always use agent versions for production traffic. See [Versions and environments](https://cloud.google.com/dialogflow/es/docs/agents-versions).
-     *       session:
-     *         'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session',
+     *   const res =
+     *     await dialogflow.projects.locations.agent.environments.users.sessions.detectIntent(
+     *       {
+     *         // Required. The name of the session this query is sent to. Format: `projects//agent/sessions/`, or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment (`Environment ID` might be referred to as environment name at some places). If `User ID` is not specified, we are using "-". It's up to the API caller to choose an appropriate `Session ID` and `User Id`. They can be a random number or some type of user and session identifiers (preferably hashed). The length of the `Session ID` and `User ID` must not exceed 36 characters. For more information, see the [API interactions guide](https://cloud.google.com/dialogflow/docs/api-overview). Note: Always use agent versions for production traffic. See [Versions and environments](https://cloud.google.com/dialogflow/es/docs/agents-versions).
+     *         session:
+     *           'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session',
      *
-     *       // Request body metadata
-     *       requestBody: {
-     *         // request body parameters
-     *         // {
-     *         //   "inputAudio": "my_inputAudio",
-     *         //   "outputAudioConfig": {},
-     *         //   "outputAudioConfigMask": "my_outputAudioConfigMask",
-     *         //   "queryInput": {},
-     *         //   "queryParams": {}
-     *         // }
-     *       },
-     *     }
-     *   );
+     *         // Request body metadata
+     *         requestBody: {
+     *           // request body parameters
+     *           // {
+     *           //   "inputAudio": "my_inputAudio",
+     *           //   "outputAudioConfig": {},
+     *           //   "outputAudioConfigMask": "my_outputAudioConfigMask",
+     *           //   "queryInput": {},
+     *           //   "queryParams": {}
+     *           // }
+     *         },
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -28669,7 +28699,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Detectintent;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Detectintent;
         options = {};
       }
 
@@ -28763,23 +28794,24 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.environments.users.sessions.contexts.create(
-     *     {
-     *       // Required. The session to create a context for. Format: `projects//agent/sessions/` or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       parent:
-     *         'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session',
+     *   const res =
+     *     await dialogflow.projects.locations.agent.environments.users.sessions.contexts.create(
+     *       {
+     *         // Required. The session to create a context for. Format: `projects//agent/sessions/` or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         parent:
+     *           'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session',
      *
-     *       // Request body metadata
-     *       requestBody: {
-     *         // request body parameters
-     *         // {
-     *         //   "lifespanCount": 0,
-     *         //   "name": "my_name",
-     *         //   "parameters": {}
-     *         // }
-     *       },
-     *     }
-     *   );
+     *         // Request body metadata
+     *         requestBody: {
+     *           // request body parameters
+     *           // {
+     *           //   "lifespanCount": 0,
+     *           //   "name": "my_name",
+     *           //   "parameters": {}
+     *           // }
+     *         },
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -28852,7 +28884,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Contexts$Create;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Contexts$Create;
         options = {};
       }
 
@@ -28919,13 +28952,13 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.environments.users.sessions.contexts.delete(
-     *     {
-     *       // Required. The name of the context to delete. Format: `projects//agent/sessions//contexts/` or `projects//agent/environments//users//sessions//contexts/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       name:
-     *         'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session/contexts/my-context',
-     *     }
-     *   );
+     *   const res =
+     *     await dialogflow.projects.locations.agent.environments.users.sessions.contexts.delete(
+     *       {
+     *         // Required. The name of the context to delete. Format: `projects//agent/sessions//contexts/` or `projects//agent/environments//users//sessions//contexts/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         name: 'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session/contexts/my-context',
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -28990,7 +29023,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Contexts$Delete;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Contexts$Delete;
         options = {};
       }
 
@@ -29052,13 +29086,13 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.environments.users.sessions.contexts.get(
-     *     {
-     *       // Required. The name of the context. Format: `projects//agent/sessions//contexts/` or `projects//agent/environments//users//sessions//contexts/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       name:
-     *         'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session/contexts/my-context',
-     *     }
-     *   );
+     *   const res =
+     *     await dialogflow.projects.locations.agent.environments.users.sessions.contexts.get(
+     *       {
+     *         // Required. The name of the context. Format: `projects//agent/sessions//contexts/` or `projects//agent/environments//users//sessions//contexts/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         name: 'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session/contexts/my-context',
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -29131,7 +29165,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Contexts$Get;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Contexts$Get;
         options = {};
       }
 
@@ -29195,17 +29230,18 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.environments.users.sessions.contexts.list(
-     *     {
-     *       // Optional. The maximum number of items to return in a single page. By default 100 and at most 1000.
-     *       pageSize: 'placeholder-value',
-     *       // Optional. The next_page_token value returned from a previous list request.
-     *       pageToken: 'placeholder-value',
-     *       // Required. The session to list all contexts from. Format: `projects//agent/sessions/` or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       parent:
-     *         'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session',
-     *     }
-     *   );
+     *   const res =
+     *     await dialogflow.projects.locations.agent.environments.users.sessions.contexts.list(
+     *       {
+     *         // Optional. The maximum number of items to return in a single page. By default 100 and at most 1000.
+     *         pageSize: 'placeholder-value',
+     *         // Optional. The next_page_token value returned from a previous list request.
+     *         pageToken: 'placeholder-value',
+     *         // Required. The session to list all contexts from. Format: `projects//agent/sessions/` or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         parent:
+     *           'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session',
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -29277,7 +29313,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Contexts$List;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Contexts$List;
         options = {};
       }
 
@@ -29344,25 +29381,25 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.environments.users.sessions.contexts.patch(
-     *     {
-     *       // Required. The unique identifier of the context. Format: `projects//agent/sessions//contexts/`, or `projects//agent/environments//users//sessions//contexts/`. The `Context ID` is always converted to lowercase, may only contain characters in a-zA-Z0-9_-% and may be at most 250 bytes long. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user. The following context names are reserved for internal use by Dialogflow. You should not use these contexts or create contexts with these names: * `__system_counters__` * `*_id_dialog_context` * `*_dialog_params_size`
-     *       name:
-     *         'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session/contexts/my-context',
-     *       // Optional. The mask to control which fields get updated.
-     *       updateMask: 'placeholder-value',
+     *   const res =
+     *     await dialogflow.projects.locations.agent.environments.users.sessions.contexts.patch(
+     *       {
+     *         // Required. The unique identifier of the context. Format: `projects//agent/sessions//contexts/`, or `projects//agent/environments//users//sessions//contexts/`. The `Context ID` is always converted to lowercase, may only contain characters in a-zA-Z0-9_-% and may be at most 250 bytes long. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user. The following context names are reserved for internal use by Dialogflow. You should not use these contexts or create contexts with these names: * `__system_counters__` * `*_id_dialog_context` * `*_dialog_params_size`
+     *         name: 'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session/contexts/my-context',
+     *         // Optional. The mask to control which fields get updated.
+     *         updateMask: 'placeholder-value',
      *
-     *       // Request body metadata
-     *       requestBody: {
-     *         // request body parameters
-     *         // {
-     *         //   "lifespanCount": 0,
-     *         //   "name": "my_name",
-     *         //   "parameters": {}
-     *         // }
-     *       },
-     *     }
-     *   );
+     *         // Request body metadata
+     *         requestBody: {
+     *           // request body parameters
+     *           // {
+     *           //   "lifespanCount": 0,
+     *           //   "name": "my_name",
+     *           //   "parameters": {}
+     *           // }
+     *         },
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -29435,7 +29472,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Contexts$Patch;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Contexts$Patch;
         options = {};
       }
 
@@ -29564,23 +29602,24 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.environments.users.sessions.entityTypes.create(
-     *     {
-     *       // Required. The session to create a session entity type for. Format: `projects//agent/sessions/` or `projects//agent/environments//users// sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       parent:
-     *         'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session',
+     *   const res =
+     *     await dialogflow.projects.locations.agent.environments.users.sessions.entityTypes.create(
+     *       {
+     *         // Required. The session to create a session entity type for. Format: `projects//agent/sessions/` or `projects//agent/environments//users// sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         parent:
+     *           'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session',
      *
-     *       // Request body metadata
-     *       requestBody: {
-     *         // request body parameters
-     *         // {
-     *         //   "entities": [],
-     *         //   "entityOverrideMode": "my_entityOverrideMode",
-     *         //   "name": "my_name"
-     *         // }
-     *       },
-     *     }
-     *   );
+     *         // Request body metadata
+     *         requestBody: {
+     *           // request body parameters
+     *           // {
+     *           //   "entities": [],
+     *           //   "entityOverrideMode": "my_entityOverrideMode",
+     *           //   "name": "my_name"
+     *           // }
+     *         },
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -29653,7 +29692,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Entitytypes$Create;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Entitytypes$Create;
         options = {};
       }
 
@@ -29720,13 +29760,13 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.environments.users.sessions.entityTypes.delete(
-     *     {
-     *       // Required. The name of the entity type to delete. Format: `projects//agent/sessions//entityTypes/` or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       name:
-     *         'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session/entityTypes/my-entityType',
-     *     }
-     *   );
+     *   const res =
+     *     await dialogflow.projects.locations.agent.environments.users.sessions.entityTypes.delete(
+     *       {
+     *         // Required. The name of the entity type to delete. Format: `projects//agent/sessions//entityTypes/` or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         name: 'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session/entityTypes/my-entityType',
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -29791,7 +29831,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Entitytypes$Delete;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Entitytypes$Delete;
         options = {};
       }
 
@@ -29853,13 +29894,13 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.environments.users.sessions.entityTypes.get(
-     *     {
-     *       // Required. The name of the session entity type. Format: `projects//agent/sessions//entityTypes/` or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       name:
-     *         'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session/entityTypes/my-entityType',
-     *     }
-     *   );
+     *   const res =
+     *     await dialogflow.projects.locations.agent.environments.users.sessions.entityTypes.get(
+     *       {
+     *         // Required. The name of the session entity type. Format: `projects//agent/sessions//entityTypes/` or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         name: 'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session/entityTypes/my-entityType',
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -29932,7 +29973,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Entitytypes$Get;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Entitytypes$Get;
         options = {};
       }
 
@@ -29996,17 +30038,18 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.environments.users.sessions.entityTypes.list(
-     *     {
-     *       // Optional. The maximum number of items to return in a single page. By default 100 and at most 1000.
-     *       pageSize: 'placeholder-value',
-     *       // Optional. The next_page_token value returned from a previous list request.
-     *       pageToken: 'placeholder-value',
-     *       // Required. The session to list all session entity types from. Format: `projects//agent/sessions/` or `projects//agent/environments//users// sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       parent:
-     *         'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session',
-     *     }
-     *   );
+     *   const res =
+     *     await dialogflow.projects.locations.agent.environments.users.sessions.entityTypes.list(
+     *       {
+     *         // Optional. The maximum number of items to return in a single page. By default 100 and at most 1000.
+     *         pageSize: 'placeholder-value',
+     *         // Optional. The next_page_token value returned from a previous list request.
+     *         pageToken: 'placeholder-value',
+     *         // Required. The session to list all session entity types from. Format: `projects//agent/sessions/` or `projects//agent/environments//users// sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
+     *         parent:
+     *           'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session',
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -30078,7 +30121,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Entitytypes$List;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Entitytypes$List;
         options = {};
       }
 
@@ -30145,25 +30189,25 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.environments.users.sessions.entityTypes.patch(
-     *     {
-     *       // Required. The unique identifier of this session entity type. Format: `projects//agent/sessions//entityTypes/`, or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user. `` must be the display name of an existing entity type in the same agent that will be overridden or supplemented.
-     *       name:
-     *         'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session/entityTypes/my-entityType',
-     *       // Optional. The mask to control which fields get updated.
-     *       updateMask: 'placeholder-value',
+     *   const res =
+     *     await dialogflow.projects.locations.agent.environments.users.sessions.entityTypes.patch(
+     *       {
+     *         // Required. The unique identifier of this session entity type. Format: `projects//agent/sessions//entityTypes/`, or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user. `` must be the display name of an existing entity type in the same agent that will be overridden or supplemented.
+     *         name: 'projects/my-project/locations/my-location/agent/environments/my-environment/users/my-user/sessions/my-session/entityTypes/my-entityType',
+     *         // Optional. The mask to control which fields get updated.
+     *         updateMask: 'placeholder-value',
      *
-     *       // Request body metadata
-     *       requestBody: {
-     *         // request body parameters
-     *         // {
-     *         //   "entities": [],
-     *         //   "entityOverrideMode": "my_entityOverrideMode",
-     *         //   "name": "my_name"
-     *         // }
-     *       },
-     *     }
-     *   );
+     *         // Request body metadata
+     *         requestBody: {
+     *           // request body parameters
+     *           // {
+     *           //   "entities": [],
+     *           //   "entityOverrideMode": "my_entityOverrideMode",
+     *           //   "name": "my_name"
+     *           // }
+     *         },
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -30236,7 +30280,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Entitytypes$Patch;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Environments$Users$Sessions$Entitytypes$Patch;
         options = {};
       }
 
@@ -30451,7 +30496,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Intents$Batchdelete;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Intents$Batchdelete;
         options = {};
       }
 
@@ -30606,7 +30652,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Intents$Batchupdate;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Intents$Batchupdate;
         options = {};
       }
 
@@ -31588,9 +31635,10 @@ export namespace dialogflow_v2 {
       this.contexts = new Resource$Projects$Locations$Agent$Sessions$Contexts(
         this.context
       );
-      this.entityTypes = new Resource$Projects$Locations$Agent$Sessions$Entitytypes(
-        this.context
-      );
+      this.entityTypes =
+        new Resource$Projects$Locations$Agent$Sessions$Entitytypes(
+          this.context
+        );
     }
 
     /**
@@ -31695,7 +31743,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Sessions$Deletecontexts;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Sessions$Deletecontexts;
         options = {};
       }
 
@@ -31851,7 +31900,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Sessions$Detectintent;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Sessions$Detectintent;
         options = {};
       }
 
@@ -31945,8 +31995,8 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.sessions.contexts.create(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.agent.sessions.contexts.create({
      *       // Required. The session to create a context for. Format: `projects//agent/sessions/` or `projects//agent/environments//users//sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
      *       parent:
      *         'projects/my-project/locations/my-location/agent/sessions/my-session',
@@ -31960,8 +32010,7 @@ export namespace dialogflow_v2 {
      *         //   "parameters": {}
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -32034,7 +32083,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Sessions$Contexts$Create;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Sessions$Contexts$Create;
         options = {};
       }
 
@@ -32101,13 +32151,11 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.sessions.contexts.delete(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.agent.sessions.contexts.delete({
      *       // Required. The name of the context to delete. Format: `projects//agent/sessions//contexts/` or `projects//agent/environments//users//sessions//contexts/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       name:
-     *         'projects/my-project/locations/my-location/agent/sessions/my-session/contexts/my-context',
-     *     }
-     *   );
+     *       name: 'projects/my-project/locations/my-location/agent/sessions/my-session/contexts/my-context',
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -32172,7 +32220,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Sessions$Contexts$Delete;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Sessions$Contexts$Delete;
         options = {};
       }
 
@@ -32236,8 +32285,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.locations.agent.sessions.contexts.get({
      *     // Required. The name of the context. Format: `projects//agent/sessions//contexts/` or `projects//agent/environments//users//sessions//contexts/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *     name:
-     *       'projects/my-project/locations/my-location/agent/sessions/my-session/contexts/my-context',
+     *     name: 'projects/my-project/locations/my-location/agent/sessions/my-session/contexts/my-context',
      *   });
      *   console.log(res.data);
      *
@@ -32311,7 +32359,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Sessions$Contexts$Get;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Sessions$Contexts$Get;
         options = {};
       }
 
@@ -32455,7 +32504,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Sessions$Contexts$List;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Sessions$Contexts$List;
         options = {};
       }
 
@@ -32525,8 +32575,7 @@ export namespace dialogflow_v2 {
      *   const res = await dialogflow.projects.locations.agent.sessions.contexts.patch(
      *     {
      *       // Required. The unique identifier of the context. Format: `projects//agent/sessions//contexts/`, or `projects//agent/environments//users//sessions//contexts/`. The `Context ID` is always converted to lowercase, may only contain characters in a-zA-Z0-9_-% and may be at most 250 bytes long. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user. The following context names are reserved for internal use by Dialogflow. You should not use these contexts or create contexts with these names: * `__system_counters__` * `*_id_dialog_context` * `*_dialog_params_size`
-     *       name:
-     *         'projects/my-project/locations/my-location/agent/sessions/my-session/contexts/my-context',
+     *       name: 'projects/my-project/locations/my-location/agent/sessions/my-session/contexts/my-context',
      *       // Optional. The mask to control which fields get updated.
      *       updateMask: 'placeholder-value',
      *
@@ -32613,7 +32662,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Sessions$Contexts$Patch;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Sessions$Contexts$Patch;
         options = {};
       }
 
@@ -32742,8 +32792,8 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.sessions.entityTypes.create(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.agent.sessions.entityTypes.create({
      *       // Required. The session to create a session entity type for. Format: `projects//agent/sessions/` or `projects//agent/environments//users// sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
      *       parent:
      *         'projects/my-project/locations/my-location/agent/sessions/my-session',
@@ -32757,8 +32807,7 @@ export namespace dialogflow_v2 {
      *         //   "name": "my_name"
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -32831,7 +32880,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Sessions$Entitytypes$Create;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Sessions$Entitytypes$Create;
         options = {};
       }
 
@@ -32898,13 +32948,11 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.sessions.entityTypes.delete(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.agent.sessions.entityTypes.delete({
      *       // Required. The name of the entity type to delete. Format: `projects//agent/sessions//entityTypes/` or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       name:
-     *         'projects/my-project/locations/my-location/agent/sessions/my-session/entityTypes/my-entityType',
-     *     }
-     *   );
+     *       name: 'projects/my-project/locations/my-location/agent/sessions/my-session/entityTypes/my-entityType',
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -32969,7 +33017,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Sessions$Entitytypes$Delete;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Sessions$Entitytypes$Delete;
         options = {};
       }
 
@@ -33031,13 +33080,11 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.sessions.entityTypes.get(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.agent.sessions.entityTypes.get({
      *       // Required. The name of the session entity type. Format: `projects//agent/sessions//entityTypes/` or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
-     *       name:
-     *         'projects/my-project/locations/my-location/agent/sessions/my-session/entityTypes/my-entityType',
-     *     }
-     *   );
+     *       name: 'projects/my-project/locations/my-location/agent/sessions/my-session/entityTypes/my-entityType',
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -33110,7 +33157,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Sessions$Entitytypes$Get;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Sessions$Entitytypes$Get;
         options = {};
       }
 
@@ -33174,8 +33222,8 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.sessions.entityTypes.list(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.agent.sessions.entityTypes.list({
      *       // Optional. The maximum number of items to return in a single page. By default 100 and at most 1000.
      *       pageSize: 'placeholder-value',
      *       // Optional. The next_page_token value returned from a previous list request.
@@ -33183,8 +33231,7 @@ export namespace dialogflow_v2 {
      *       // Required. The session to list all session entity types from. Format: `projects//agent/sessions/` or `projects//agent/environments//users// sessions/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user.
      *       parent:
      *         'projects/my-project/locations/my-location/agent/sessions/my-session',
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -33256,7 +33303,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Sessions$Entitytypes$List;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Sessions$Entitytypes$List;
         options = {};
       }
 
@@ -33323,11 +33371,10 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.agent.sessions.entityTypes.patch(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.agent.sessions.entityTypes.patch({
      *       // Required. The unique identifier of this session entity type. Format: `projects//agent/sessions//entityTypes/`, or `projects//agent/environments//users//sessions//entityTypes/`. If `Environment ID` is not specified, we assume default 'draft' environment. If `User ID` is not specified, we assume default '-' user. `` must be the display name of an existing entity type in the same agent that will be overridden or supplemented.
-     *       name:
-     *         'projects/my-project/locations/my-location/agent/sessions/my-session/entityTypes/my-entityType',
+     *       name: 'projects/my-project/locations/my-location/agent/sessions/my-session/entityTypes/my-entityType',
      *       // Optional. The mask to control which fields get updated.
      *       updateMask: 'placeholder-value',
      *
@@ -33340,8 +33387,7 @@ export namespace dialogflow_v2 {
      *         //   "name": "my_name"
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -33414,7 +33460,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Agent$Sessions$Entitytypes$Patch;
+        params =
+          {} as Params$Resource$Projects$Locations$Agent$Sessions$Entitytypes$Patch;
         options = {};
       }
 
@@ -34489,8 +34536,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.locations.answerRecords.patch({
      *     // The unique identifier of this answer record. Format: `projects//locations//answerRecords/`.
-     *     name:
-     *       'projects/my-project/locations/my-location/answerRecords/my-answerRecord',
+     *     name: 'projects/my-project/locations/my-location/answerRecords/my-answerRecord',
      *     // Required. The mask to control which fields get updated.
      *     updateMask: 'placeholder-value',
      *
@@ -34787,7 +34833,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversationprofiles$Create;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversationprofiles$Create;
         options = {};
       }
 
@@ -34856,8 +34903,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.locations.conversationProfiles.delete({
      *     // Required. The name of the conversation profile to delete. Format: `projects//locations//conversationProfiles/`.
-     *     name:
-     *       'projects/my-project/locations/my-location/conversationProfiles/my-conversationProfile',
+     *     name: 'projects/my-project/locations/my-location/conversationProfiles/my-conversationProfile',
      *   });
      *   console.log(res.data);
      *
@@ -34923,7 +34969,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversationprofiles$Delete;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversationprofiles$Delete;
         options = {};
       }
 
@@ -34987,8 +35034,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.locations.conversationProfiles.get({
      *     // Required. The resource name of the conversation profile. Format: `projects//locations//conversationProfiles/`.
-     *     name:
-     *       'projects/my-project/locations/my-location/conversationProfiles/my-conversationProfile',
+     *     name: 'projects/my-project/locations/my-location/conversationProfiles/my-conversationProfile',
      *   });
      *   console.log(res.data);
      *
@@ -35071,7 +35117,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversationprofiles$Get;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversationprofiles$Get;
         options = {};
       }
 
@@ -35214,7 +35261,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversationprofiles$List;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversationprofiles$List;
         options = {};
       }
 
@@ -35283,8 +35331,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.locations.conversationProfiles.patch({
      *     // The unique identifier of this conversation profile. Format: `projects//locations//conversationProfiles/`.
-     *     name:
-     *       'projects/my-project/locations/my-location/conversationProfiles/my-conversationProfile',
+     *     name: 'projects/my-project/locations/my-location/conversationProfiles/my-conversationProfile',
      *     // Required. The mask to control which fields to update.
      *     updateMask: 'placeholder-value',
      *
@@ -35388,7 +35435,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversationprofiles$Patch;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversationprofiles$Patch;
         options = {};
       }
 
@@ -35491,9 +35539,10 @@ export namespace dialogflow_v2 {
       this.messages = new Resource$Projects$Locations$Conversations$Messages(
         this.context
       );
-      this.participants = new Resource$Projects$Locations$Conversations$Participants(
-        this.context
-      );
+      this.participants =
+        new Resource$Projects$Locations$Conversations$Participants(
+          this.context
+        );
     }
 
     /**
@@ -35527,8 +35576,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.locations.conversations.complete({
      *     // Required. Resource identifier of the conversation to close. Format: `projects//locations//conversations/`.
-     *     name:
-     *       'projects/my-project/locations/my-location/conversations/my-conversation',
+     *     name: 'projects/my-project/locations/my-location/conversations/my-conversation',
      *
      *     // Request body metadata
      *     requestBody: {
@@ -35612,7 +35660,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversations$Complete;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversations$Complete;
         options = {};
       }
 
@@ -35844,8 +35893,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.locations.conversations.get({
      *     // Required. The name of the conversation. Format: `projects//locations//conversations/`.
-     *     name:
-     *       'projects/my-project/locations/my-location/conversations/my-conversation',
+     *     name: 'projects/my-project/locations/my-location/conversations/my-conversation',
      *   });
      *   console.log(res.data);
      *
@@ -36279,7 +36327,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversations$Messages$List;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversations$Messages$List;
         options = {};
       }
 
@@ -36343,9 +36392,10 @@ export namespace dialogflow_v2 {
     suggestions: Resource$Projects$Locations$Conversations$Participants$Suggestions;
     constructor(context: APIRequestContext) {
       this.context = context;
-      this.suggestions = new Resource$Projects$Locations$Conversations$Participants$Suggestions(
-        this.context
-      );
+      this.suggestions =
+        new Resource$Projects$Locations$Conversations$Participants$Suggestions(
+          this.context
+        );
     }
 
     /**
@@ -36377,25 +36427,26 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.conversations.participants.analyzeContent(
-     *     {
-     *       // Required. The name of the participant this text comes from. Format: `projects//locations//conversations//participants/`.
-     *       participant:
-     *         'projects/my-project/locations/my-location/conversations/my-conversation/participants/my-participant',
+     *   const res =
+     *     await dialogflow.projects.locations.conversations.participants.analyzeContent(
+     *       {
+     *         // Required. The name of the participant this text comes from. Format: `projects//locations//conversations//participants/`.
+     *         participant:
+     *           'projects/my-project/locations/my-location/conversations/my-conversation/participants/my-participant',
      *
-     *       // Request body metadata
-     *       requestBody: {
-     *         // request body parameters
-     *         // {
-     *         //   "eventInput": {},
-     *         //   "queryParams": {},
-     *         //   "replyAudioConfig": {},
-     *         //   "requestId": "my_requestId",
-     *         //   "textInput": {}
-     *         // }
-     *       },
-     *     }
-     *   );
+     *         // Request body metadata
+     *         requestBody: {
+     *           // request body parameters
+     *           // {
+     *           //   "eventInput": {},
+     *           //   "queryParams": {},
+     *           //   "replyAudioConfig": {},
+     *           //   "requestId": "my_requestId",
+     *           //   "textInput": {}
+     *           // }
+     *         },
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -36472,7 +36523,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversations$Participants$Analyzecontent;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversations$Participants$Analyzecontent;
         options = {};
       }
 
@@ -36539,8 +36591,8 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.conversations.participants.create(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.conversations.participants.create({
      *       // Required. Resource identifier of the conversation adding the participant. Format: `projects//locations//conversations/`.
      *       parent:
      *         'projects/my-project/locations/my-location/conversations/my-conversation',
@@ -36554,8 +36606,7 @@ export namespace dialogflow_v2 {
      *         //   "sipRecordingMediaLabel": "my_sipRecordingMediaLabel"
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -36628,7 +36679,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversations$Participants$Create;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversations$Participants$Create;
         options = {};
       }
 
@@ -36695,13 +36747,11 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.conversations.participants.get(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.conversations.participants.get({
      *       // Required. The name of the participant. Format: `projects//locations//conversations//participants/`.
-     *       name:
-     *         'projects/my-project/locations/my-location/conversations/my-conversation/participants/my-participant',
-     *     }
-     *   );
+     *       name: 'projects/my-project/locations/my-location/conversations/my-conversation/participants/my-participant',
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -36774,7 +36824,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversations$Participants$Get;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversations$Participants$Get;
         options = {};
       }
 
@@ -36838,8 +36889,8 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.conversations.participants.list(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.conversations.participants.list({
      *       // Optional. The maximum number of items to return in a single page. By default 100 and at most 1000.
      *       pageSize: 'placeholder-value',
      *       // Optional. The next_page_token value returned from a previous list request.
@@ -36847,8 +36898,7 @@ export namespace dialogflow_v2 {
      *       // Required. The conversation to list all participants from. Format: `projects//locations//conversations/`.
      *       parent:
      *         'projects/my-project/locations/my-location/conversations/my-conversation',
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -36920,7 +36970,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversations$Participants$List;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversations$Participants$List;
         options = {};
       }
 
@@ -36987,11 +37038,10 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.conversations.participants.patch(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.conversations.participants.patch({
      *       // Optional. The unique identifier of this participant. Format: `projects//locations//conversations//participants/`.
-     *       name:
-     *         'projects/my-project/locations/my-location/conversations/my-conversation/participants/my-participant',
+     *       name: 'projects/my-project/locations/my-location/conversations/my-conversation/participants/my-participant',
      *       // Required. The mask to specify which fields to update.
      *       updateMask: 'placeholder-value',
      *
@@ -37004,8 +37054,7 @@ export namespace dialogflow_v2 {
      *         //   "sipRecordingMediaLabel": "my_sipRecordingMediaLabel"
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -37078,7 +37127,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversations$Participants$Patch;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversations$Participants$Patch;
         options = {};
       }
 
@@ -37212,22 +37262,23 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.conversations.participants.suggestions.suggestArticles(
-     *     {
-     *       // Required. The name of the participant to fetch suggestion for. Format: `projects//locations//conversations//participants/`.
-     *       parent:
-     *         'projects/my-project/locations/my-location/conversations/my-conversation/participants/my-participant',
+     *   const res =
+     *     await dialogflow.projects.locations.conversations.participants.suggestions.suggestArticles(
+     *       {
+     *         // Required. The name of the participant to fetch suggestion for. Format: `projects//locations//conversations//participants/`.
+     *         parent:
+     *           'projects/my-project/locations/my-location/conversations/my-conversation/participants/my-participant',
      *
-     *       // Request body metadata
-     *       requestBody: {
-     *         // request body parameters
-     *         // {
-     *         //   "contextSize": 0,
-     *         //   "latestMessage": "my_latestMessage"
-     *         // }
-     *       },
-     *     }
-     *   );
+     *         // Request body metadata
+     *         requestBody: {
+     *           // request body parameters
+     *           // {
+     *           //   "contextSize": 0,
+     *           //   "latestMessage": "my_latestMessage"
+     *           // }
+     *         },
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -37300,7 +37351,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversations$Participants$Suggestions$Suggestarticles;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversations$Participants$Suggestions$Suggestarticles;
         options = {};
       }
 
@@ -37366,22 +37418,23 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.conversations.participants.suggestions.suggestFaqAnswers(
-     *     {
-     *       // Required. The name of the participant to fetch suggestion for. Format: `projects//locations//conversations//participants/`.
-     *       parent:
-     *         'projects/my-project/locations/my-location/conversations/my-conversation/participants/my-participant',
+     *   const res =
+     *     await dialogflow.projects.locations.conversations.participants.suggestions.suggestFaqAnswers(
+     *       {
+     *         // Required. The name of the participant to fetch suggestion for. Format: `projects//locations//conversations//participants/`.
+     *         parent:
+     *           'projects/my-project/locations/my-location/conversations/my-conversation/participants/my-participant',
      *
-     *       // Request body metadata
-     *       requestBody: {
-     *         // request body parameters
-     *         // {
-     *         //   "contextSize": 0,
-     *         //   "latestMessage": "my_latestMessage"
-     *         // }
-     *       },
-     *     }
-     *   );
+     *         // Request body metadata
+     *         requestBody: {
+     *           // request body parameters
+     *           // {
+     *           //   "contextSize": 0,
+     *           //   "latestMessage": "my_latestMessage"
+     *           // }
+     *         },
+     *       }
+     *     );
      *   console.log(res.data);
      *
      *   // Example response
@@ -37454,7 +37507,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Conversations$Participants$Suggestions$Suggestfaqanswers;
+        params =
+          {} as Params$Resource$Projects$Locations$Conversations$Participants$Suggestions$Suggestfaqanswers;
         options = {};
       }
 
@@ -37713,8 +37767,7 @@ export namespace dialogflow_v2 {
      *     // Optional. Force deletes the knowledge base. When set to true, any documents in the knowledge base are also deleted.
      *     force: 'placeholder-value',
      *     // Required. The name of the knowledge base to delete. Format: `projects//locations//knowledgeBases/`.
-     *     name:
-     *       'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase',
+     *     name: 'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase',
      *   });
      *   console.log(res.data);
      *
@@ -37844,8 +37897,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.locations.knowledgeBases.get({
      *     // Required. The name of the knowledge base to retrieve. Format `projects//locations//knowledgeBases/`.
-     *     name:
-     *       'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase',
+     *     name: 'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase',
      *   });
      *   console.log(res.data);
      *
@@ -38131,8 +38183,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.locations.knowledgeBases.patch({
      *     // The knowledge base resource name. The name must be empty when creating a knowledge base. Format: `projects//locations//knowledgeBases/`.
-     *     name:
-     *       'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase',
+     *     name: 'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase',
      *     // Optional. Not specified means `update all`. Currently, only `display_name` can be updated, an InvalidArgument will be returned for attempting to update other fields.
      *     updateMask: 'placeholder-value',
      *
@@ -38351,8 +38402,8 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.knowledgeBases.documents.create(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.knowledgeBases.documents.create({
      *       // Required. The knowledge base to create a document for. Format: `projects//locations//knowledgeBases/`.
      *       parent:
      *         'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase',
@@ -38372,8 +38423,7 @@ export namespace dialogflow_v2 {
      *         //   "rawContent": "my_rawContent"
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -38448,7 +38498,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Knowledgebases$Documents$Create;
+        params =
+          {} as Params$Resource$Projects$Locations$Knowledgebases$Documents$Create;
         options = {};
       }
 
@@ -38513,13 +38564,11 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.knowledgeBases.documents.delete(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.knowledgeBases.documents.delete({
      *       // Required. The name of the document to delete. Format: `projects//locations//knowledgeBases//documents/`.
-     *       name:
-     *         'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase/documents/my-document',
-     *     }
-     *   );
+     *       name: 'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase/documents/my-document',
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -38594,7 +38643,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Knowledgebases$Documents$Delete;
+        params =
+          {} as Params$Resource$Projects$Locations$Knowledgebases$Documents$Delete;
         options = {};
       }
 
@@ -38658,8 +38708,7 @@ export namespace dialogflow_v2 {
      *   // Do the magic
      *   const res = await dialogflow.projects.locations.knowledgeBases.documents.get({
      *     // Required. The name of the document to retrieve. Format `projects//locations//knowledgeBases//documents/`.
-     *     name:
-     *       'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase/documents/my-document',
+     *     name: 'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase/documents/my-document',
      *   });
      *   console.log(res.data);
      *
@@ -38739,7 +38788,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Knowledgebases$Documents$Get;
+        params =
+          {} as Params$Resource$Projects$Locations$Knowledgebases$Documents$Get;
         options = {};
       }
 
@@ -38885,7 +38935,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Knowledgebases$Documents$List;
+        params =
+          {} as Params$Resource$Projects$Locations$Knowledgebases$Documents$List;
         options = {};
       }
 
@@ -38952,11 +39003,10 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.knowledgeBases.documents.patch(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.knowledgeBases.documents.patch({
      *       // Optional. The document resource name. The name must be empty when creating a document. Format: `projects//locations//knowledgeBases//documents/`.
-     *       name:
-     *         'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase/documents/my-document',
+     *       name: 'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase/documents/my-document',
      *       // Optional. Not specified means `update all`. Currently, only `display_name` can be updated, an InvalidArgument will be returned for attempting to update other fields.
      *       updateMask: 'placeholder-value',
      *
@@ -38975,8 +39025,7 @@ export namespace dialogflow_v2 {
      *         //   "rawContent": "my_rawContent"
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -39051,7 +39100,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Knowledgebases$Documents$Patch;
+        params =
+          {} as Params$Resource$Projects$Locations$Knowledgebases$Documents$Patch;
         options = {};
       }
 
@@ -39113,11 +39163,10 @@ export namespace dialogflow_v2 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await dialogflow.projects.locations.knowledgeBases.documents.reload(
-     *     {
+     *   const res =
+     *     await dialogflow.projects.locations.knowledgeBases.documents.reload({
      *       // Required. The name of the document to reload. Format: `projects//locations//knowledgeBases//documents/`
-     *       name:
-     *         'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase/documents/my-document',
+     *       name: 'projects/my-project/locations/my-location/knowledgeBases/my-knowledgeBase/documents/my-document',
      *
      *       // Request body metadata
      *       requestBody: {
@@ -39126,8 +39175,7 @@ export namespace dialogflow_v2 {
      *         //   "contentUri": "my_contentUri"
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -39202,7 +39250,8 @@ export namespace dialogflow_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Locations$Knowledgebases$Documents$Reload;
+        params =
+          {} as Params$Resource$Projects$Locations$Knowledgebases$Documents$Reload;
         options = {};
       }
 
