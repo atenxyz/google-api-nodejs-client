@@ -1481,7 +1481,8 @@ export namespace accessapproval_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Organizations$Deleteaccessapprovalsettings;
+        params =
+          {} as Params$Resource$Organizations$Deleteaccessapprovalsettings;
         options = {};
       }
 
@@ -1768,7 +1769,8 @@ export namespace accessapproval_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Organizations$Updateaccessapprovalsettings;
+        params =
+          {} as Params$Resource$Organizations$Updateaccessapprovalsettings;
         options = {};
       }
 
