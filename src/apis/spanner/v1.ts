@@ -1905,9 +1905,8 @@ export namespace spanner_v1 {
         this.context
       );
       this.backups = new Resource$Projects$Instances$Backups(this.context);
-      this.databaseOperations = new Resource$Projects$Instances$Databaseoperations(
-        this.context
-      );
+      this.databaseOperations =
+        new Resource$Projects$Instances$Databaseoperations(this.context);
       this.databases = new Resource$Projects$Instances$Databases(this.context);
       this.operations = new Resource$Projects$Instances$Operations(
         this.context
@@ -4445,7 +4444,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Backups$Testiampermissions;
+        params =
+          {} as Params$Resource$Projects$Instances$Backups$Testiampermissions;
         options = {};
       }
 
@@ -4629,8 +4629,7 @@ export namespace spanner_v1 {
      *   // Do the magic
      *   const res = await spanner.projects.instances.backups.operations.cancel({
      *     // The name of the operation resource to be cancelled.
-     *     name:
-     *       'projects/my-project/instances/my-instance/backups/my-backup/operations/my-operation',
+     *     name: 'projects/my-project/instances/my-instance/backups/my-backup/operations/my-operation',
      *   });
      *   console.log(res.data);
      *
@@ -4693,7 +4692,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Backups$Operations$Cancel;
+        params =
+          {} as Params$Resource$Projects$Instances$Backups$Operations$Cancel;
         options = {};
       }
 
@@ -4757,8 +4757,7 @@ export namespace spanner_v1 {
      *   // Do the magic
      *   const res = await spanner.projects.instances.backups.operations.delete({
      *     // The name of the operation resource to be deleted.
-     *     name:
-     *       'projects/my-project/instances/my-instance/backups/my-backup/operations/my-operation',
+     *     name: 'projects/my-project/instances/my-instance/backups/my-backup/operations/my-operation',
      *   });
      *   console.log(res.data);
      *
@@ -4821,7 +4820,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Backups$Operations$Delete;
+        params =
+          {} as Params$Resource$Projects$Instances$Backups$Operations$Delete;
         options = {};
       }
 
@@ -4885,8 +4885,7 @@ export namespace spanner_v1 {
      *   // Do the magic
      *   const res = await spanner.projects.instances.backups.operations.get({
      *     // The name of the operation resource.
-     *     name:
-     *       'projects/my-project/instances/my-instance/backups/my-backup/operations/my-operation',
+     *     name: 'projects/my-project/instances/my-instance/backups/my-backup/operations/my-operation',
      *   });
      *   console.log(res.data);
      *
@@ -4955,7 +4954,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Backups$Operations$Get;
+        params =
+          {} as Params$Resource$Projects$Instances$Backups$Operations$Get;
         options = {};
       }
 
@@ -5021,8 +5021,7 @@ export namespace spanner_v1 {
      *     // The standard list filter.
      *     filter: 'placeholder-value',
      *     // The name of the operation's parent resource.
-     *     name:
-     *       'projects/my-project/instances/my-instance/backups/my-backup/operations',
+     *     name: 'projects/my-project/instances/my-instance/backups/my-backup/operations',
      *     // The standard list page size.
      *     pageSize: 'placeholder-value',
      *     // The standard list page token.
@@ -5097,7 +5096,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Backups$Operations$List;
+        params =
+          {} as Params$Resource$Projects$Instances$Backups$Operations$List;
         options = {};
       }
 
@@ -5288,7 +5288,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databaseoperations$List;
+        params =
+          {} as Params$Resource$Projects$Instances$Databaseoperations$List;
         options = {};
       }
 
@@ -5601,7 +5602,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Dropdatabase;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Dropdatabase;
         options = {};
       }
 
@@ -6013,7 +6015,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Getiampolicy;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Getiampolicy;
         options = {};
       }
 
@@ -6443,7 +6446,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Setiampolicy;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Setiampolicy;
         options = {};
       }
 
@@ -6590,7 +6594,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Testiampermissions;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Testiampermissions;
         options = {};
       }
 
@@ -6918,8 +6923,7 @@ export namespace spanner_v1 {
      *   // Do the magic
      *   const res = await spanner.projects.instances.databases.operations.cancel({
      *     // The name of the operation resource to be cancelled.
-     *     name:
-     *       'projects/my-project/instances/my-instance/databases/my-database/operations/my-operation',
+     *     name: 'projects/my-project/instances/my-instance/databases/my-database/operations/my-operation',
      *   });
      *   console.log(res.data);
      *
@@ -6982,7 +6986,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Operations$Cancel;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Operations$Cancel;
         options = {};
       }
 
@@ -7046,8 +7051,7 @@ export namespace spanner_v1 {
      *   // Do the magic
      *   const res = await spanner.projects.instances.databases.operations.delete({
      *     // The name of the operation resource to be deleted.
-     *     name:
-     *       'projects/my-project/instances/my-instance/databases/my-database/operations/my-operation',
+     *     name: 'projects/my-project/instances/my-instance/databases/my-database/operations/my-operation',
      *   });
      *   console.log(res.data);
      *
@@ -7110,7 +7114,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Operations$Delete;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Operations$Delete;
         options = {};
       }
 
@@ -7174,8 +7179,7 @@ export namespace spanner_v1 {
      *   // Do the magic
      *   const res = await spanner.projects.instances.databases.operations.get({
      *     // The name of the operation resource.
-     *     name:
-     *       'projects/my-project/instances/my-instance/databases/my-database/operations/my-operation',
+     *     name: 'projects/my-project/instances/my-instance/databases/my-database/operations/my-operation',
      *   });
      *   console.log(res.data);
      *
@@ -7244,7 +7248,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Operations$Get;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Operations$Get;
         options = {};
       }
 
@@ -7310,8 +7315,7 @@ export namespace spanner_v1 {
      *     // The standard list filter.
      *     filter: 'placeholder-value',
      *     // The name of the operation's parent resource.
-     *     name:
-     *       'projects/my-project/instances/my-instance/databases/my-database/operations',
+     *     name: 'projects/my-project/instances/my-instance/databases/my-database/operations',
      *     // The standard list page size.
      *     pageSize: 'placeholder-value',
      *     // The standard list page token.
@@ -7386,7 +7390,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Operations$List;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Operations$List;
         options = {};
       }
 
@@ -7579,7 +7584,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Batchcreate;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Batchcreate;
         options = {};
       }
 
@@ -7644,8 +7650,8 @@ export namespace spanner_v1 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await spanner.projects.instances.databases.sessions.beginTransaction(
-     *     {
+     *   const res =
+     *     await spanner.projects.instances.databases.sessions.beginTransaction({
      *       // Required. The session in which the transaction runs.
      *       session:
      *         'projects/my-project/instances/my-instance/databases/my-database/sessions/my-session',
@@ -7658,8 +7664,7 @@ export namespace spanner_v1 {
      *         //   "requestOptions": {}
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -7724,7 +7729,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Begintransaction;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Begintransaction;
         options = {};
       }
 
@@ -7870,7 +7876,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Commit;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Commit;
         options = {};
       }
 
@@ -8013,7 +8020,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Create;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Create;
         options = {};
       }
 
@@ -8080,8 +8088,7 @@ export namespace spanner_v1 {
      *   // Do the magic
      *   const res = await spanner.projects.instances.databases.sessions.delete({
      *     // Required. The name of the session to delete.
-     *     name:
-     *       'projects/my-project/instances/my-instance/databases/my-database/sessions/my-session',
+     *     name: 'projects/my-project/instances/my-instance/databases/my-database/sessions/my-session',
      *   });
      *   console.log(res.data);
      *
@@ -8144,7 +8151,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Delete;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Delete;
         options = {};
       }
 
@@ -8206,8 +8214,8 @@ export namespace spanner_v1 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await spanner.projects.instances.databases.sessions.executeBatchDml(
-     *     {
+     *   const res =
+     *     await spanner.projects.instances.databases.sessions.executeBatchDml({
      *       // Required. The session in which the DML statements should be performed.
      *       session:
      *         'projects/my-project/instances/my-instance/databases/my-database/sessions/my-session',
@@ -8222,8 +8230,7 @@ export namespace spanner_v1 {
      *         //   "transaction": {}
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -8295,7 +8302,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Executebatchdml;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Executebatchdml;
         options = {};
       }
 
@@ -8447,7 +8455,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Executesql;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Executesql;
         options = {};
       }
 
@@ -8512,8 +8521,8 @@ export namespace spanner_v1 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await spanner.projects.instances.databases.sessions.executeStreamingSql(
-     *     {
+     *   const res =
+     *     await spanner.projects.instances.databases.sessions.executeStreamingSql({
      *       // Required. The session in which the SQL query should be performed.
      *       session:
      *         'projects/my-project/instances/my-instance/databases/my-database/sessions/my-session',
@@ -8534,8 +8543,7 @@ export namespace spanner_v1 {
      *         //   "transaction": {}
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -8605,7 +8613,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Executestreamingsql;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Executestreamingsql;
         options = {};
       }
 
@@ -8672,8 +8681,7 @@ export namespace spanner_v1 {
      *   // Do the magic
      *   const res = await spanner.projects.instances.databases.sessions.get({
      *     // Required. The name of the session to retrieve.
-     *     name:
-     *       'projects/my-project/instances/my-instance/databases/my-database/sessions/my-session',
+     *     name: 'projects/my-project/instances/my-instance/databases/my-database/sessions/my-session',
      *   });
      *   console.log(res.data);
      *
@@ -8741,7 +8749,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Get;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Get;
         options = {};
       }
 
@@ -8882,7 +8891,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$List;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$List;
         options = {};
       }
 
@@ -8947,8 +8957,8 @@ export namespace spanner_v1 {
      *   google.options({auth: authClient});
      *
      *   // Do the magic
-     *   const res = await spanner.projects.instances.databases.sessions.partitionQuery(
-     *     {
+     *   const res =
+     *     await spanner.projects.instances.databases.sessions.partitionQuery({
      *       // Required. The session used to create the partitions.
      *       session:
      *         'projects/my-project/instances/my-instance/databases/my-database/sessions/my-session',
@@ -8964,8 +8974,7 @@ export namespace spanner_v1 {
      *         //   "transaction": {}
      *         // }
      *       },
-     *     }
-     *   );
+     *     });
      *   console.log(res.data);
      *
      *   // Example response
@@ -9035,7 +9044,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Partitionquery;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Partitionquery;
         options = {};
       }
 
@@ -9189,7 +9199,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Partitionread;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Partitionread;
         options = {};
       }
 
@@ -9340,7 +9351,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Read;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Read;
         options = {};
       }
 
@@ -9479,7 +9491,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Rollback;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Rollback;
         options = {};
       }
 
@@ -9636,7 +9649,8 @@ export namespace spanner_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Projects$Instances$Databases$Sessions$Streamingread;
+        params =
+          {} as Params$Resource$Projects$Instances$Databases$Sessions$Streamingread;
         options = {};
       }
 
