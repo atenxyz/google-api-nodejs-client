@@ -2863,7 +2863,8 @@ export namespace people_v1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Othercontacts$Copyothercontacttomycontactsgroup;
+        params =
+          {} as Params$Resource$Othercontacts$Copyothercontacttomycontactsgroup;
         options = {};
       }
 
