@@ -6278,6 +6278,23 @@ export namespace content_v2_1 {
      */
     state?: string | null;
   }
+  /**
+   * Return shipping label for a Buy on Google merchant-managed return.
+   */
+  export interface Schema$ReturnShippingLabel {
+    /**
+     * Name of the carrier.
+     */
+    carrier?: string | null;
+    /**
+     * The URL for the return shipping label in PDF format
+     */
+    labelUri?: string | null;
+    /**
+     * The tracking id of this return label.
+     */
+    trackingId?: string | null;
+  }
   export interface Schema$Row {
     /**
      * The list of cells that constitute the row. Must have the same length as `columnHeaders` for two-dimensional tables, a length of 1 for one-dimensional tables. Required.
@@ -6449,7 +6466,7 @@ export namespace content_v2_1 {
   export interface Schema$SettlementTransactionAmount {
     commission?: Schema$SettlementTransactionAmountCommission;
     /**
-     * The description of the event. Acceptable values are: - "`taxWithhold`" - "`principal`" - "`principalAdjustment`" - "`shippingFee`" - "`merchantRemittedSalesTax`" - "`googleRemittedSalesTax`" - "`merchantCoupon`" - "`merchantCouponTax`" - "`merchantRemittedDisposalTax`" - "`googleRemittedDisposalTax`" - "`merchantRemittedRedemptionFee`" - "`googleRemittedRedemptionFee`" - "`eeeEcoFee`" - "`furnitureEcoFee`" - "`copyPrivateFee`" - "`eeeEcoFeeCommission`" - "`furnitureEcoFeeCommission`" - "`copyPrivateFeeCommission`" - "`principalRefund`" - "`principalRefundTax`" - "`itemCommission`" - "`adjustmentCommission`" - "`shippingFeeCommission`" - "`commissionRefund`" - "`damaged`" - "`damagedOrDefectiveItem`" - "`expiredItem`" - "`faultyItem`" - "`incorrectItemReceived`" - "`itemMissing`" - "`qualityNotExpected`" - "`receivedTooLate`" - "`storePackageMissing`" - "`transitPackageMissing`" - "`unsuccessfulDeliveryUndeliverable`" - "`wrongChargeInStore`" - "`wrongItem`" - "`returns`" - "`undeliverable`" - "`issueRelatedRefundAndReplacementAmountDescription`" - "`refundFromMerchant`" - "`returnLabelShippingFee`" - "`lumpSumCorrection`" - "`pspFee`"
+     * The description of the event. Acceptable values are: - "`taxWithhold`" - "`principal`" - "`principalAdjustment`" - "`shippingFee`" - "`merchantRemittedSalesTax`" - "`googleRemittedSalesTax`" - "`merchantCoupon`" - "`merchantCouponTax`" - "`merchantRemittedDisposalTax`" - "`googleRemittedDisposalTax`" - "`merchantRemittedRedemptionFee`" - "`googleRemittedRedemptionFee`" - "`eeeEcoFee`" - "`furnitureEcoFee`" - "`copyPrivateFee`" - "`eeeEcoFeeCommission`" - "`furnitureEcoFeeCommission`" - "`copyPrivateFeeCommission`" - "`principalRefund`" - "`principalRefundTax`" - "`itemCommission`" - "`adjustmentCommission`" - "`shippingFeeCommission`" - "`commissionRefund`" - "`damaged`" - "`damagedOrDefectiveItem`" - "`expiredItem`" - "`faultyItem`" - "`incorrectItemReceived`" - "`itemMissing`" - "`qualityNotExpected`" - "`receivedTooLate`" - "`storePackageMissing`" - "`transitPackageMissing`" - "`unsuccessfulDeliveryUndeliverable`" - "`wrongChargeInStore`" - "`wrongItem`" - "`returns`" - "`undeliverable`" - "`issueRelatedRefundAndReplacementAmountDescription`" - "`refundFromMerchant`" - "`returnLabelShippingFee`" - "`lumpSumCorrection`" - "`pspFee`" - "`principalRefundDoesNotFit`" - "`principalRefundOrderedWrongItem`" - "`principalRefundQualityNotExpected`" - "`principalRefundBetterPriceFound`" - "`principalRefundNoLongerNeeded`" - "`principalRefundChangedMind`" - "`principalRefundReceivedTooLate`" - "`principalRefundIncorrectItemReceived`" - "`principalRefundDamagedOrDefectiveItem`" - "`principalRefundDidNotMatchDescription`" - "`principalRefundExpiredItem`"
      */
     description?: string | null;
     /**
@@ -16104,7 +16121,8 @@ export namespace content_v2_1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Liasettings$Setinventoryverificationcontact;
+        params =
+          {} as Params$Resource$Liasettings$Setinventoryverificationcontact;
         options = {};
       }
 
@@ -17623,8 +17641,10 @@ export namespace content_v2_1 {
 
   export class Resource$Orderreturns {
     context: APIRequestContext;
+    labels: Resource$Orderreturns$Labels;
     constructor(context: APIRequestContext) {
       this.context = context;
+      this.labels = new Resource$Orderreturns$Labels(this.context);
     }
 
     /**
@@ -18483,6 +18503,177 @@ export namespace content_v2_1 {
      * Request body metadata
      */
     requestBody?: Schema$OrderreturnsProcessRequest;
+  }
+
+  export class Resource$Orderreturns$Labels {
+    context: APIRequestContext;
+    constructor(context: APIRequestContext) {
+      this.context = context;
+    }
+
+    /**
+     * Links a return shipping label to a return id. You can only create one return label per return id. Since the label is sent to the buyer, the linked return label cannot be updated or deleted. If you try to create multiple return shipping labels for a single return id, every create request except the first will fail.
+     * @example
+     * ```js
+     * // Before running the sample:
+     * // - Enable the API at:
+     * //   https://console.developers.google.com/apis/api/content.googleapis.com
+     * // - Login into gcloud by running:
+     * //   `$ gcloud auth application-default login`
+     * // - Install the npm module by running:
+     * //   `$ npm install googleapis`
+     *
+     * const {google} = require('googleapis');
+     * const content = google.content('v2.1');
+     *
+     * async function main() {
+     *   const auth = new google.auth.GoogleAuth({
+     *     // Scopes can be specified either as an array or as a single, space-delimited string.
+     *     scopes: ['https://www.googleapis.com/auth/content'],
+     *   });
+     *
+     *   // Acquire an auth client, and bind it to all future calls
+     *   const authClient = await auth.getClient();
+     *   google.options({auth: authClient});
+     *
+     *   // Do the magic
+     *   const res = await content.orderreturns.labels.create({
+     *     // Required. The merchant the Return Shipping Label belongs to.
+     *     merchantId: 'placeholder-value',
+     *     // Required. Provide the Google-generated merchant order return ID.
+     *     returnId: 'placeholder-value',
+     *
+     *     // Request body metadata
+     *     requestBody: {
+     *       // request body parameters
+     *       // {
+     *       //   "carrier": "my_carrier",
+     *       //   "labelUri": "my_labelUri",
+     *       //   "trackingId": "my_trackingId"
+     *       // }
+     *     },
+     *   });
+     *   console.log(res.data);
+     *
+     *   // Example response
+     *   // {
+     *   //   "carrier": "my_carrier",
+     *   //   "labelUri": "my_labelUri",
+     *   //   "trackingId": "my_trackingId"
+     *   // }
+     * }
+     *
+     * main().catch(e => {
+     *   console.error(e);
+     *   throw e;
+     * });
+     *
+     * ```
+     *
+     * @param params - Parameters for request
+     * @param options - Optionally override request options, such as `url`, `method`, and `encoding`.
+     * @param callback - Optional callback that handles the response.
+     * @returns A promise if used with async/await, or void if used with a callback.
+     */
+    create(
+      params: Params$Resource$Orderreturns$Labels$Create,
+      options: StreamMethodOptions
+    ): GaxiosPromise<Readable>;
+    create(
+      params?: Params$Resource$Orderreturns$Labels$Create,
+      options?: MethodOptions
+    ): GaxiosPromise<Schema$ReturnShippingLabel>;
+    create(
+      params: Params$Resource$Orderreturns$Labels$Create,
+      options: StreamMethodOptions | BodyResponseCallback<Readable>,
+      callback: BodyResponseCallback<Readable>
+    ): void;
+    create(
+      params: Params$Resource$Orderreturns$Labels$Create,
+      options: MethodOptions | BodyResponseCallback<Schema$ReturnShippingLabel>,
+      callback: BodyResponseCallback<Schema$ReturnShippingLabel>
+    ): void;
+    create(
+      params: Params$Resource$Orderreturns$Labels$Create,
+      callback: BodyResponseCallback<Schema$ReturnShippingLabel>
+    ): void;
+    create(callback: BodyResponseCallback<Schema$ReturnShippingLabel>): void;
+    create(
+      paramsOrCallback?:
+        | Params$Resource$Orderreturns$Labels$Create
+        | BodyResponseCallback<Schema$ReturnShippingLabel>
+        | BodyResponseCallback<Readable>,
+      optionsOrCallback?:
+        | MethodOptions
+        | StreamMethodOptions
+        | BodyResponseCallback<Schema$ReturnShippingLabel>
+        | BodyResponseCallback<Readable>,
+      callback?:
+        | BodyResponseCallback<Schema$ReturnShippingLabel>
+        | BodyResponseCallback<Readable>
+    ):
+      | void
+      | GaxiosPromise<Schema$ReturnShippingLabel>
+      | GaxiosPromise<Readable> {
+      let params = (paramsOrCallback ||
+        {}) as Params$Resource$Orderreturns$Labels$Create;
+      let options = (optionsOrCallback || {}) as MethodOptions;
+
+      if (typeof paramsOrCallback === 'function') {
+        callback = paramsOrCallback;
+        params = {} as Params$Resource$Orderreturns$Labels$Create;
+        options = {};
+      }
+
+      if (typeof optionsOrCallback === 'function') {
+        callback = optionsOrCallback;
+        options = {};
+      }
+
+      const rootUrl =
+        options.rootUrl || 'https://shoppingcontent.googleapis.com/';
+      const parameters = {
+        options: Object.assign(
+          {
+            url: (
+              rootUrl +
+              '/content/v2.1/{merchantId}/orderreturns/{returnId}/labels'
+            ).replace(/([^:]\/)\/+/g, '$1'),
+            method: 'POST',
+          },
+          options
+        ),
+        params,
+        requiredParams: ['merchantId', 'returnId'],
+        pathParams: ['merchantId', 'returnId'],
+        context: this.context,
+      };
+      if (callback) {
+        createAPIRequest<Schema$ReturnShippingLabel>(
+          parameters,
+          callback as BodyResponseCallback<unknown>
+        );
+      } else {
+        return createAPIRequest<Schema$ReturnShippingLabel>(parameters);
+      }
+    }
+  }
+
+  export interface Params$Resource$Orderreturns$Labels$Create
+    extends StandardParameters {
+    /**
+     * Required. The merchant the Return Shipping Label belongs to.
+     */
+    merchantId?: string;
+    /**
+     * Required. Provide the Google-generated merchant order return ID.
+     */
+    returnId?: string;
+
+    /**
+     * Request body metadata
+     */
+    requestBody?: Schema$ReturnShippingLabel;
   }
 
   export class Resource$Orders {
@@ -30986,7 +31177,8 @@ export namespace content_v2_1 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Shippingsettings$Getsupportedpickupservices;
+        params =
+          {} as Params$Resource$Shippingsettings$Getsupportedpickupservices;
         options = {};
       }
 

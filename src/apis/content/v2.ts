@@ -11082,7 +11082,8 @@ export namespace content_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Liasettings$Setinventoryverificationcontact;
+        params =
+          {} as Params$Resource$Liasettings$Setinventoryverificationcontact;
         options = {};
       }
 
@@ -19547,7 +19548,8 @@ export namespace content_v2 {
 
       if (typeof paramsOrCallback === 'function') {
         callback = paramsOrCallback;
-        params = {} as Params$Resource$Shippingsettings$Getsupportedpickupservices;
+        params =
+          {} as Params$Resource$Shippingsettings$Getsupportedpickupservices;
         options = {};
       }
 
